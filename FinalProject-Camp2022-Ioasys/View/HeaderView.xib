@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="172"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="e9L-Ez-ueL">
+                    <rect key="frame" x="24" y="28" width="173.5" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ioasys" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnt-wo-wzN">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="40"/>
+                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="26"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tt-yf-RvM">
+                            <rect key="frame" x="105" y="0.0" width="68.5" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="68.5" id="VuV-pX-mLh"/>
+                            </constraints>
+                            <attributedString key="attributedText">
+                                <fragment content="Books">
+                                    <attributes>
+                                        <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <font key="NSFont" size="24" name="Heebo-Light"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jwY-Jk-SfJ">
+                    <rect key="frame" x="294" y="30" width="7" height="17.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="7" id="bB6-Pd-nhW"/>
+                        <constraint firstAttribute="height" constant="17.5" id="sYt-Hz-eKG"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jc-be-KSz">
+                    <rect key="frame" x="24" y="84" width="174" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="KnP-5e-rTt"/>
+                    </constraints>
+                    <attributedString key="attributedText">
+                        <fragment content="Bem vindo, Jéssica!">
+                            <attributes>
+                                <color key="NSColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <font key="NSFont" size="18" name="Heebo-Light"/>
+                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                            </attributes>
+                        </fragment>
+                    </attributedString>
+                    <nil key="highlightedColor"/>
+                </label>
+                <searchBar contentMode="scaleToFill" semanticContentAttribute="playback" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Procure um livro" translatesAutoresizingMaskIntoConstraints="NO" id="EVL-Cr-iOD">
+                    <rect key="frame" x="7" y="112" width="310" height="44"/>
+                    <offsetWrapper key="searchTextPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <offsetWrapper key="searchFieldBackgroundPositionAdjustment" horizontal="0.0" vertical="0.0"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="e9L-Ez-ueL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="2WF-V7-p7A"/>
+                <constraint firstItem="e9L-Ez-ueL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="28" id="8G0-KJ-nlt"/>
+                <constraint firstItem="EVL-Cr-iOD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="BmK-FZ-iIE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EVL-Cr-iOD" secondAttribute="bottom" constant="16" id="FRc-F2-dGi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jwY-Jk-SfJ" secondAttribute="trailing" constant="24" id="Gnk-uM-B82"/>
+                <constraint firstItem="jwY-Jk-SfJ" firstAttribute="leading" secondItem="e9L-Ez-ueL" secondAttribute="trailing" constant="96.5" id="Nxl-GV-uiM"/>
+                <constraint firstItem="1jc-be-KSz" firstAttribute="top" secondItem="e9L-Ez-ueL" secondAttribute="bottom" constant="16" id="P8R-wY-H35"/>
+                <constraint firstItem="EVL-Cr-iOD" firstAttribute="top" secondItem="jwY-Jk-SfJ" secondAttribute="bottom" constant="64.5" id="Rd7-G2-35k"/>
+                <constraint firstItem="EVL-Cr-iOD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="7" id="VHn-Ml-pjD"/>
+                <constraint firstItem="e9L-Ez-ueL" firstAttribute="centerX" secondItem="1jc-be-KSz" secondAttribute="centerX" id="Y3G-QW-yIN"/>
+                <constraint firstItem="jwY-Jk-SfJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="h5E-jB-T11"/>
+                <constraint firstItem="EVL-Cr-iOD" firstAttribute="top" secondItem="1jc-be-KSz" secondAttribute="bottom" constant="12" id="itB-Is-91Q"/>
+                <constraint firstItem="e9L-Ez-ueL" firstAttribute="leading" secondItem="1jc-be-KSz" secondAttribute="leading" id="zv1-kz-Prk"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-987" y="-640"/>
+        </view>
+        <view contentMode="scaleToFill" id="ByL-lR-1AR">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <viewLayoutGuide key="safeArea" id="3Kn-PK-KVB"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <point key="canvasLocation" x="-822" y="300"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
